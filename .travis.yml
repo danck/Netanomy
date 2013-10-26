@@ -1,7 +1,7 @@
 language: cpp
 
 compiler:
-  - clang
+  - gcc
 
 before_script:
 #  - PATH=$PATH:/home/travis/build/DanoPrat/Netanomy/lib
