@@ -3,7 +3,7 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
  
 
 # Create a variable called netonomy_SOURCES containing all .cpp files:
-set(netanomy_SOURCES master.cpp cppzmq/zmq.hpp)
+set(netanomy_SOURCES master.cpp)
  
 # For a large number of source files you can create it in a simpler way
 # using file() function:
