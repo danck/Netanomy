@@ -20,6 +20,6 @@ before_script:
   - cd ..
   - mkdir build
   - cd build
-  - cmake cmake -DZMQ_INCLUDE=$HOME/Netanomy/lib/zeromq-4.0.1/include -DZMQ_LIBRARY=$HOME/Netanomy/lib/zeromq-4.0.1/lib/libzmq.so..
+  - cmake -DZMQ_INCLUDE=$HOME/Netanomy/lib/zeromq-4.0.1/include -DZMQ_LIBRARY=$HOME/Netanomy/lib/zeromq-4.0.1/lib/libzmq.so ..
 
 script: make
