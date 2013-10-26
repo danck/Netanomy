@@ -21,4 +21,4 @@ include_directories(lib/include)
 
 link_directories(lib)
 
-target_link_libraries(netanomy libzmq)
+target_link_libraries(netanomy zmq)
