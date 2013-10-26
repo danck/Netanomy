@@ -13,6 +13,7 @@ before_script:
   - make
   - sudo make install
   - cd ..
+  - rm -rf lib
   - mkdir build
   - cd build
   - cmake ..
