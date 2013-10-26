@@ -11,7 +11,7 @@ before_script:
   - cd zeromq-4.0.1
   - ./configure
   - make
-  - make install
+  - sudo make install
   - cd ..
   - mkdir build
   - cd build
