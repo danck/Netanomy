@@ -3,6 +3,11 @@ language: cpp
 compiler:
   - clang
 
+# blacklisted branches
+branches:
+  except:
+    - test
+
 before_script:
   - PROJECT_ROOT=`pwd`
   - PATH=$PATH:/home/travis/build/DanoPrat/Netanomy/lib
