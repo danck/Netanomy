@@ -1,0 +1,1 @@
+/opt/zmaw/sw/squeeze-x64/gcc/gcc-4.7.2/bin/c++      CMakeFiles/Master.dir/master.cpp.o  -o Master -rdynamic cppzmq/libzmq.a 

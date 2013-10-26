@@ -1,0 +1,2 @@
+/home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/Master.dir
+/home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/cppzmq/CMakeFiles/zmq.dir

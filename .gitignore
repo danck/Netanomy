@@ -1,0 +1,8 @@
+build
+lib
+*.o
+*.so
+*.a
+*.la
+Makefile
+Makefile.in

@@ -1,0 +1,21 @@
+language: cpp
+
+compiler:
+  - clang
+
+before_script:
+  - mkdir lib
+  - cd lib
+  - wget http://download.zeromq.org/zeromq-4.0.1.tar.gz
+  - tar xzf zeromq-4.0.1.tar.gz
+  - cd zeromq-4.0.1
+  - ./configure
+  - make
+  - sudo make install
+  - sudo ldconfig
+  - cd ..
+  - mkdir build
+  - cd build
+  - cmake ..
+
+script: make

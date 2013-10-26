@@ -1,0 +1,175 @@
+Determining if files windows.h exist failed with the following output:
+Change Dir: /home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o
+/opt/zmaw/sw/squeeze-x64/gcc/gcc-4.7.2/bin/gcc    -o CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o   -c /home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:21: fatal error: windows.h: No such file or directory
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory `/home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec/fast] Error 2
+
+Source:
+/* */
+#include <windows.h>
+
+
+int main(){return 0;}
+
+Determining if the function printf exists in the ws2_32 failed with the following output:
+Change Dir: /home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/opt/zmaw/sw/squeeze-x64/gcc/gcc-4.7.2/bin/gcc   -DCHECK_FUNCTION_EXISTS=printf   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: warning: conflicting types for built-in function ‘printf’ [enabled by default]
+Linking C executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/opt/zmaw/sw/squeeze-x64/gcc/gcc-4.7.2/bin/gcc     -DCHECK_FUNCTION_EXISTS=printf   CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic -lws2_32 
+/sw/squeeze-x64/gcc/binutils-2.20.1/bin/ld: cannot find -lws2_32
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec] Error 1
+make[1]: Leaving directory `/home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec/fast] Error 2
+
+
+Determining if the function printf exists in the ws2 failed with the following output:
+Change Dir: /home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/opt/zmaw/sw/squeeze-x64/gcc/gcc-4.7.2/bin/gcc   -DCHECK_FUNCTION_EXISTS=printf   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: warning: conflicting types for built-in function ‘printf’ [enabled by default]
+Linking C executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/opt/zmaw/sw/squeeze-x64/gcc/gcc-4.7.2/bin/gcc     -DCHECK_FUNCTION_EXISTS=printf   CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic -lws2 
+/sw/squeeze-x64/gcc/binutils-2.20.1/bin/ld: cannot find -lws2
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec] Error 1
+make[1]: Leaving directory `/home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec/fast] Error 2
+
+
+Determining if the function printf exists in the rpcrt4 failed with the following output:
+Change Dir: /home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/opt/zmaw/sw/squeeze-x64/gcc/gcc-4.7.2/bin/gcc   -DCHECK_FUNCTION_EXISTS=printf   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: warning: conflicting types for built-in function ‘printf’ [enabled by default]
+Linking C executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/opt/zmaw/sw/squeeze-x64/gcc/gcc-4.7.2/bin/gcc     -DCHECK_FUNCTION_EXISTS=printf   CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic -lrpcrt4 
+/sw/squeeze-x64/gcc/binutils-2.20.1/bin/ld: cannot find -lrpcrt4
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec] Error 1
+make[1]: Leaving directory `/home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec/fast] Error 2
+
+
+Determining if the function printf exists in the iphlpapi failed with the following output:
+Change Dir: /home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/opt/zmaw/sw/squeeze-x64/gcc/gcc-4.7.2/bin/gcc   -DCHECK_FUNCTION_EXISTS=printf   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: warning: conflicting types for built-in function ‘printf’ [enabled by default]
+Linking C executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/opt/zmaw/sw/squeeze-x64/gcc/gcc-4.7.2/bin/gcc     -DCHECK_FUNCTION_EXISTS=printf   CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic -liphlpapi 
+/sw/squeeze-x64/gcc/binutils-2.20.1/bin/ld: cannot find -liphlpapi
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec] Error 1
+make[1]: Leaving directory `/home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec/fast] Error 2
+
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/opt/zmaw/sw/squeeze-x64/gcc/gcc-4.7.2/bin/gcc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/opt/zmaw/sw/squeeze-x64/gcc/gcc-4.7.2/bin/gcc     -DCHECK_FUNCTION_EXISTS=pthread_create   CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic -lpthreads 
+/sw/squeeze-x64/gcc/binutils-2.20.1/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: Leaving directory `/home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec] Error 1
+make: *** [cmTryCompileExec/fast] Error 2
+
+
+Determining if the function gethrtime exists failed with the following output:
+Change Dir: /home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o
+/opt/zmaw/sw/squeeze-x64/gcc/gcc-4.7.2/bin/gcc   -DCHECK_FUNCTION_EXISTS=gethrtime -I/home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp/sys/time.h   -o CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
+/opt/zmaw/sw/squeeze-x64/gcc/gcc-4.7.2/bin/gcc     -DCHECK_FUNCTION_EXISTS=gethrtime   CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o  -o cmTryCompileExec -rdynamic 
+CMakeFiles/cmTryCompileExec.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `gethrtime'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec] Error 1
+make[1]: Leaving directory `/home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec/fast] Error 2
+
+
+Performing C SOURCE FILE Test ZMQ_HAVE_TCP_KEEPALIVE failed with the following output:
+Change Dir: /home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
+make[1]: Entering directory `/home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec.dir/src.c.o
+/opt/zmaw/sw/squeeze-x64/gcc/gcc-4.7.2/bin/gcc   -DZMQ_HAVE_TCP_KEEPALIVE   -o CMakeFiles/cmTryCompileExec.dir/src.c.o   -c /home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp/src.c
+/home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp/src.c:13:42: error: ‘TCP_KEEPALIVE’ undeclared (first use in this function)
+/home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp/src.c:13:42: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTryCompileExec.dir/src.c.o] Error 1
+make[1]: Leaving directory `/home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec/fast] Error 2
+
+Return value: 1
+Source file was:
+
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+
+int main(int argc, char *argv [])
+{
+    int s, rc, opt = 1;
+    return(
+       ((s = socket(PF_INET, SOCK_STREAM, 0)) == -1) ||
+       ((rc = setsockopt(s, SOL_SOCKET, SO_KEEPALIVE,(char*) &opt, sizeof(int))) == -1) ||
+       ((rc = setsockopt(s, IPPROTO_TCP, TCP_KEEPALIVE,(char*) &opt, sizeof(int))) == -1)
+    );
+}
+
