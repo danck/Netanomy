@@ -4,6 +4,7 @@ compiler:
   - clang
 
 before_script:
+  - PATH=$PATH:/home/travis/build/DanoPrat/Netanomy/lib
   - mkdir lib
   - cd lib
   - wget http://download.zeromq.org/zeromq-4.0.1.tar.gz
