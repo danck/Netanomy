@@ -19,6 +19,6 @@ add_executable(netanomy ${netanomy_SOURCES})
 #set(LIBS ${LIBS} ${ZeroMQ_LIBRARIES})
 #set(LIBS lib/lib/*)
 
-link_directories(lib/lib)
+link_directories(lib)
 
-target_link_libraries(netanomy zmq)
+target_link_libraries(netanomy libzmq)
