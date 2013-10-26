@@ -13,7 +13,9 @@ add_executable(netanomy ${netanomy_SOURCES})
 
 
 find_package(ZeroMQ REQUIRED)
-include_directories(${ZeroMQ++_INCLUDE_DIRS})
-set(LIBS ${LIBS} ${ZeroMQ_LIBRARIES})
+#include_directories(${ZeroMQ++_INCLUDE_DIRS})
+include_directories(${ZMQ_INCLUDE_DIR})
+#set(LIBS ${LIBS} ${ZeroMQ_LIBRARIES})
+set(LIBS ${ZMQ_LIBS})
 
 target_link_libraries(netanomy ${LIBS})

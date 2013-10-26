@@ -9,7 +9,7 @@ before_script:
   - wget http://download.zeromq.org/zeromq-4.0.1.tar.gz
   - tar xzf zeromq-4.0.1.tar.gz
   - cd zeromq-4.0.1
-  - ./configure
+  - ./configure --prefix=/home/travis/build/DanoPrat/Netanomy/lib
   - make
   - sudo make install
   - ldconfig -v | grep -i libzmq
@@ -17,6 +17,6 @@ before_script:
   - cd ..
   - mkdir build
   - cd build
-  - cmake ..
+  - cmake -DZMQ_INCLUDE_DIR=/home/travis/build/DanoPrat/Netanomy/lib/include -DZMQ_LIBS=/home/travis/build/DanoPrat/Netanomy/lib/lib ..
 
 script: make
