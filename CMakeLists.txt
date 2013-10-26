@@ -12,8 +12,9 @@ set(CMAKE_MODULE_PATH ${netanomy_SOURCE_DIR}/cmake/modules ${CMAKE_MODULE_PATH})
 include(MacroOutOfSourceBuild)
 
 
-target_link_libraries(netanomy ${LIBS})
  
 macro_ensure_out_of_source_build("${PROJECT_NAME} requires an out of source build.")
  
 add_subdirectory(src)
+
+# target_link_libraries(netanomy ${LIBS})
