@@ -4,7 +4,16 @@ compiler:
   - clang
 
 before_script:
-  - git clone https://github.com/zeromq/zeromq4-x.git
+  - mkdir lib
+  - cd lib
+  - wget http://download.zeromq.org/zeromq-4.0.1.tar.gz
+  - tar xzf zeromq-4.0.1.tar.gz
+  - cd zeromq-4.0.1
+  - ./configure
+  - make
+  - sudo make install
+  - ldconfig -v | grep -i libzmq
+  - cd ..
   - mkdir build
   - cd build
   - cmake ..
