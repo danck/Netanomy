@@ -13,7 +13,7 @@ set(netanomy_SOURCES master.cpp cppzmq/zmq.hpp)
 add_executable(netanomy ${netanomy_SOURCES})
 
 
-/find_package(ZeroMQ REQUIRED)
+#find_package(ZeroMQ REQUIRED)
 #include_directories(${ZeroMQ++_INCLUDE_DIRS})
 include_directories(lib/include)
 #set(LIBS ${LIBS} ${ZeroMQ_LIBRARIES})
