@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/zmq.hpp
+zmq.h
+-
+algorithm
+-
+cassert
+-
+cstring
+-
+string
+-
+exception
+-
+
+/home/zmaw/m215025/haw/4_wise2013/se/remote/netanomy/src/master.cpp
+zmq.hpp
+-
+string
+-
+iostream
+-
+unistd.h
+-
+
