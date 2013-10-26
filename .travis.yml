@@ -17,7 +17,7 @@ before_script:
 #  - sudo ldconfig -v | grep -i libzmq
 #  - cd ..
 #  - cd ..
-#  - mkdir build
+  - mkdir build
   - cd build
   - cmake ..
 
