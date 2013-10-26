@@ -4,19 +4,19 @@ compiler:
   - clang
 
 before_script:
-  - PATH=$PATH:/home/travis/build/DanoPrat/Netanomy/lib
-  - mkdir lib
-  - cd lib
-  - wget http://download.zeromq.org/zeromq-4.0.1.tar.gz
-  - tar xzf zeromq-4.0.1.tar.gz
-  - cd zeromq-4.0.1
-  - ./configure --prefix=/home/travis/build/DanoPrat/Netanomy/lib
-  - make
-  - make install
+#  - PATH=$PATH:/home/travis/build/DanoPrat/Netanomy/lib
+#  - mkdir lib
+#  - cd lib
+#  - wget http://download.zeromq.org/zeromq-4.0.1.tar.gz
+#  - tar xzf zeromq-4.0.1.tar.gz
+#  - cd zeromq-4.0.1
+#  - ./configure --prefix=/home/travis/build/DanoPrat/Netanomy/lib
+#  - make
+#  - make install
 #  - sudo apt-get install libzmq-dev
-  - sudo ldconfig -v | grep -i libzmq
-  - cd ..
-  - cd ..
+#  - sudo ldconfig -v | grep -i libzmq
+#  - cd ..
+#  - cd ..
   - mkdir build
   - cd build
   - cmake ..

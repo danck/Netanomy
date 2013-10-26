@@ -1,20 +1,19 @@
-# Project name is not mandatory, but you should use it
-project(netanomy)
- 
-# States that CMake required version must be greater than 2.6
-cmake_minimum_required(VERSION 2.6)
- 
-# Appends the cmake/modules path inside the MAKE_MODULE_PATH variable which stores the
-# directories of additional CMake modules (ie. MacroOutOfSourceBuild.cmake):
-set(CMAKE_MODULE_PATH ${netanomy_SOURCE_DIR}/cmake/modules ${CMAKE_MODULE_PATH})
- 
-# The macro below forces the build directory to be different from source directory:
-include(MacroOutOfSourceBuild)
+cmake_minimum_required(VERSION 2.8)
+project(netalyzer)
+
+set(NETALYZER_MAJOR_VERSION 0)
+set(NETALYZER_MINOR_VERSION 1)
+set(NETALYZER_PATCH_VERSION 0)
+set(NETALYZER_VERSION
+  ${NETALYZER_MAJOR_VERSION}.${NETALYZER_MINOR_VERSION}.${NETALYZER_PATCH_VERSION})
 
 
- 
-macro_ensure_out_of_source_build("${PROJECT_NAME} requires an out of source build.")
- 
-add_subdirectory(src)
+find_library(ZMQ libzmq.a ${PROJECT_SOURCE_DIR}/ZMQBuild/lib)
 
-# target_link_libraries(netanomy ${LIBS})
+
+add_executable(Master master.cpp)
+
+
+
+
+target_link_libraries(Master zmq)
