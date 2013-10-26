@@ -26,7 +26,6 @@ before_script:
   - ls $HOME/build/DanoPrat/Netanomy
   - ls $HOME/build/DanoPrat/Netanomy/lib
   - ls $HOME/build/DanoPrat/Netanomy/lib/zeromq-4.0.1
-  - ls $HOME/build/DanoPrat/Netanomy/lib/zeromq-4.0.1/lib/
-  - cmake -DZMQ_INCLUDE=$HOME/build/DanoPrat/Netanomy/lib/zeromq-4.0.1/include -DZMQ_LIBRARY=$HOME/build/DanoPrat/Netanomy/lib/zeromq-4.0.1/lib/libzmq.so ..
+  - cmake -DZMQ_INCLUDE=$HOME/build/DanoPrat/Netanomy/lib/include -DZMQ_LIBRARY=$HOME/build/DanoPrat/Netanomy/lib/lib/libzmq.so ..
 
 script: make
