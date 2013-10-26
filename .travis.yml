@@ -4,6 +4,7 @@ compiler:
   - clang
 
 before_script:
+  - echo $HOME
   - PATH=$PATH:/home/travis/build/DanoPrat/Netanomy/lib
   - LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/travis/build/DanoPrat/Netanomy
   - mkdir lib
@@ -20,6 +21,8 @@ before_script:
   - cd ..
   - mkdir build
   - cd build
+  - ls $HOME/Netanomy/lib/zeromq-4.0.1/include
+  - ls $HOME/Netanomy/lib/zeromq-4.0.1/lib/
   - cmake -DZMQ_INCLUDE=$HOME/Netanomy/lib/zeromq-4.0.1/include -DZMQ_LIBRARY=$HOME/Netanomy/lib/zeromq-4.0.1/lib/libzmq.so ..
 
 script: make
