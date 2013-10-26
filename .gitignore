@@ -6,3 +6,4 @@ lib
 *.la
 Makefile
 Makefile.in
+CMakeFiles
