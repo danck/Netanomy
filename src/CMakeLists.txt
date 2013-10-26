@@ -12,6 +12,8 @@ set(netanomy_SOURCES master.cpp)
 # Create an executable file called netonomy from sources:
 add_executable(netanomy ${netanomy_SOURCES})
 
+SET(ZMQ_INCLUDE ${ZMQ_INCLUDE} CACHE STRING "Location of ZeroMQ headers.")
+SET(ZMQ_LIBRARY ${ZMQ_LIBRARY} CACHE STRING "ZeroMQ libraries to link in.")
 
 #find_package(ZeroMQ REQUIRED)
 #include_directories(${ZeroMQ++_INCLUDE_DIRS})
@@ -19,6 +21,6 @@ include_directories(lib/include)
 #set(LIBS ${LIBS} ${ZeroMQ_LIBRARIES})
 #set(LIBS lib/lib/*)
 
-link_directories(lib)
+#link_directories(lib)
 
-target_link_libraries(netanomy zmq)
+target_link_libraries(netanomy ${ZMQ_LIBRARY})
