@@ -13,7 +13,6 @@ before_script:
   - make
   - sudo make install
   - ldconfig -v | grep -i libzmq
-  - cd ..
   - mkdir build
   - cd build
   - cmake ..
