@@ -13,7 +13,7 @@ before_script:
   - ./configure # --prefix=/home/travis/build/DanoPrat/Netanomy/lib
   - make
   - sudo make install
-  - sudo apt-get install libzmq-dev
+#  - sudo apt-get install libzmq-dev
   - sudo ldconfig -v | grep -i libzmq
   - cd ..
   - cd ..
